@@ -1,0 +1,10 @@
+tensorflow
+matplotlib
+pandas
+numpy
+os
+tqdm
+opencv-python
+scikit-learn
+scikit-image
+warnings
