@@ -97,7 +97,7 @@ To perform inference on trained models, use the following notebooks and scripts:
      python run_inference.py --dataset mnist --brightness 70
      ```
 
-2. **Edge Device Inference on Raspberry Pi:** Start with [this readme]() to set up the Pi.
+2. **Edge Device Inference on Raspberry Pi:** Start with [this readme](docs/setup.md) to set up the Pi.
 
 3. **Cross-Data Validation:** Inference is conducted on cross-dataset examples, including non-standard test images, such as sketches and cartoon CAD models.
 

@@ -43,9 +43,6 @@ class Models():
         model.add(Dense(128, activation='relu', kernel_initializer='he_uniform'))
         model.add(Dropout(0.2))
         model.add(Dense(self.num_classes, activation='softmax'))
-        # compile model
-        opt = SGD(lr=self.args.lr, momentum=0.9)
-        model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
         return model
     ##########################################################################################################################################################
     def get_resnet50(self):
@@ -69,4 +66,11 @@ class Models():
             Dense(self.num_classes, activation='softmax')
         ])
         return model
+    def compile_model(self,args,model,opt=None):
+        # compile model
+        if opt is None:
+            opt = SGD(lr=self.args.lr, momentum=0.9)
+        model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
+        return model
+
     
