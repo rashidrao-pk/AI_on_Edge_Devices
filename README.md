@@ -120,7 +120,7 @@ To perform inference on trained models, use the following notebooks and scripts:
 ---
 
 ---
-## **Hardware 1 Details used for Tarining**
+## **Hardware 1 Configuration (Training)**
 ```cmd
 Hardware Name   : Santech-XN2 Laptop
 Hardware Memory : 16GB
@@ -141,7 +141,7 @@ PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')
 ```
 
 ---
-## **Edge Device Setup**
+## **Edge Device Configuration (Inference)**
 
 ```cmd
 Hardware Name   : Raspberry-Pi-4B
