@@ -1,0 +1,33 @@
+Python version:           3.9.2 (default, Feb 28 2021, 17:03:44) 
+[GCC 10.2.1 20210110]
+TensorFlow version:       2.13.0
+Keras version:            2.13.1
+NumPy version:            1.24.3
+System architecture:      ('64bit', 'ELF')
+Machine type:             aarch64
+Processor:                
+Platform:                 Linux, #1680 SMP PREEMPT Wed Sep 13 18:09:06 BST 2023
+Release:                  6.1.53-v8+
+Version:                  #1680 SMP PREEMPT Wed Sep 13 18:09:06 BST 2023
+No GPU detected by TensorFlow
+------------------------------------------------------------------------------------------------------------------------
+Dataset                   cifar10
+Model Type                custom
+Test Device               raspberry
+Experiments Made          23:27:15 | 03-11-2024 
+------------------------------------------------------------------------------------------------------------------------
+Test data INFO            (10000, 32, 32, 3) (10000,)
+Images INFO               <class 'numpy.ndarray'> float32
+Using Model               AI_on_Edge_Devices/codes/models/cifar_converted_model.tflite
+Storing INFO to           AI_on_Edge_Devices/docs//devices//raspberry_results.txt
+Accuracy                  : 0.7634                   
+Balanced_Accuracy         : 0.7634                   
+Precision                 : 0.7691612                
+Recall                    : 0.7634                   
+F1                        : 0.7634393                
+F_Beta                    : 0.7661193                
+cohen_kappa               : 0.7371111                
+MCC                       : 0.7376948                
+------------------------------------------------------------------------------------------------------------------------
+Total Time Taken: 00:04:42
+------------------------------------------------------------------------------------------------------------------------

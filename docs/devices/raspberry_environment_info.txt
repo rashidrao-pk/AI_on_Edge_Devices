@@ -1,0 +1,12 @@
+Python version:           3.9.2 (default, Feb 28 2021, 17:03:44) 
+[GCC 10.2.1 20210110]
+TensorFlow version:       2.13.0
+Keras version:            2.13.1
+NumPy version:            1.24.3
+System architecture:      ('64bit', 'ELF')
+Machine type:             aarch64
+Processor:                
+Platform:                 Linux, #1680 SMP PREEMPT Wed Sep 13 18:09:06 BST 2023
+Release:                  6.1.53-v8+
+Version:                  #1680 SMP PREEMPT Wed Sep 13 18:09:06 BST 2023
+No GPU detected by TensorFlow
