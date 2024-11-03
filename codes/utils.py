@@ -66,7 +66,7 @@ class Evaluation():
                 print(value, "\n" if isinstance(value, str) else f"{value:.4f}")
 
         return results
-    def plot_confusion_matrix(self):
+    def plot_confusion_matrix(self,model_type='full_model',dpi=200, transparent=True,ext='png'):
         y_true = self.y_true
         y_pred = self.y_pred
         
@@ -95,7 +95,8 @@ class Evaluation():
         plt.xlabel('Predicted Labels')
         plt.ylabel('True Labels')
         plt.tight_layout()
-        # plt.savefig(f'{self.args.}/aaa.png)
+        plt.savefig(f'{self.args.path_results}/{self.args.dataset}_{self.args.model_name}_{model_type}_confmat_{self.args.testdevice}.{ext}',
+                    bbox_inches='tight',transparent=transparent, dpi=dpi, )
         plt.show()
     def summarize_diagnostics(history):
         # plot loss
