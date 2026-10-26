@@ -113,6 +113,9 @@ for idd,(img,lbl) in enumerate(zip(tqdm(testX),testY)):
     processed_img = np.expand_dims(img, axis=0).astype(np.float32)  #float16
     interpreter.set_tensor(input_index, processed_img)
     interpreter.invoke()
+    top_k_values, top_k_indices = tf.nn.top_k(interpreter.get_tensor(output_index), 1)
+    topk = top_k_indices[0].numpy()
+    topv = top_k_values[0].numpy()
     prediction_output = interpreter.get_tensor(output_index)
     prediction = np.argmax(prediction_output)
 
